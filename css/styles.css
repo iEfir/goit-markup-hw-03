@@ -1,3 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
 :root {
   --logo-focus-hover-color: #2196f3;
   --title-color: #212121;
@@ -7,6 +43,42 @@
 .body {
   font-family: "roboto", sans-serif;
   background: #ffffff;
+}
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.index-header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-header-list {
+  margin-left: auto;
+}
+
+.container-header-contact {
+  margin-left: auto;
+}
+
+.container-header-portfolio {
+  margin-bottom: 94px;
 }
 
 .link-logo,
@@ -19,6 +91,10 @@
   letter-spacing: 0.03em;
   color: black;
   text-decoration: none;
+}
+
+.link-logo {
+  margin-right: 93px;
 }
 
 .web {
@@ -52,17 +128,28 @@
 }
 
 .index-hero {
+  margin-bottom: 94px;
   background: #2f303a;
+}
+
+.container-hero {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .index-tagline {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
+  width: 696px;
+  text-align: center;
+  margin-top: 200px;
 }
 
 .index-btn {
@@ -70,17 +157,31 @@
   font-weight: var(--title-logo-font-weight);
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
   color: #ffffff;
   background: var(--logo-focus-hover-color);
   cursor: pointer;
+  min-width: 216px;
+  height: 50px;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.container-index-peculiarities {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.index-hero-list {
+  display: flex;
+  gap: 30px;
 }
 
 .index-list {
   list-style: none;
+}
+
+.index-list-item {
+  width: 270px;
 }
 
 .index-content {
@@ -90,6 +191,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  padding-bottom: 10px;
 }
 
 .index-description {
@@ -107,10 +209,44 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
+}
+
+.index-list-activity {
+  display: flex;
+  gap: 30px;
+}
+
+.container-activity {
+  margin-bottom: 94px;
 }
 
 .team {
   background: #f5f4fa;
+}
+
+.index-list-team {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+.team-item {
+  width: 270px;
+  height: 368px;
+}
+
+.team-item:last-child {
+  margin-right: 0px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team-tagline {
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -120,6 +256,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .team-activity {
@@ -128,10 +265,21 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-bottom: 30px;
 }
 
 .portfolio-list {
   list-style: none;
+}
+
+.portfolio-list-btn {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.portfolio-list-btn-item {
+  display: inline;
+  margin-right: 8px;
 }
 
 .filter-btn {
@@ -144,6 +292,12 @@
   background-color: #f5f4fa;
   color: #212121;
   cursor: pointer;
+  padding: 6px 22px;
+  border: 0px;
+}
+
+.filter-btn:last-child {
+  margin-right: 0px;
 }
 
 .filter-btn:hover,
@@ -151,6 +305,10 @@
   color: #ffffff;
   background: var(--logo-focus-hover-color);
 }
+
+/* .portfolio-hero-item {
+  border: 1px solid #EEEEEE;
+} */
 
 .hero-content {
   font-weight: var(--title-logo-font-weight);
@@ -167,7 +325,12 @@
 }
 
 .footer-logo {
+  margin-bottom: 20px;
   color: #ffffff;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .web-footer {
@@ -197,5 +360,13 @@
 }
 
 .footer {
+  height: 252px;
   background: #2f303a;
+}
+
+.container-footer {
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
