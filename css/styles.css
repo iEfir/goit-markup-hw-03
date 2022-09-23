@@ -268,13 +268,28 @@ address {
   padding-bottom: 30px;
 }
 
+.container-header-portfolio {
+  margin-bottom: 94px;
+}
+
+.container-portfolio-main {
+  margin-bottom: 94px;
+}
+
 .portfolio-list {
+  display: flex;
   list-style: none;
 }
 
 .portfolio-list-btn {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 34px;
+}
+
+.portfolio-list-card {
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-list-btn-item {
@@ -306,9 +321,17 @@ address {
   background: var(--logo-focus-hover-color);
 }
 
-/* .portfolio-hero-item {
-  border: 1px solid #EEEEEE;
-} */
+.portfolio-hero-item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+}
+
+.hero-content-portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+}
 
 .hero-content {
   font-weight: var(--title-logo-font-weight);
@@ -324,7 +347,12 @@ address {
   color: #757575;
 }
 
+.address {
+  min-width: 231px;
+}
+
 .footer-logo {
+  width: 145px;
   margin-bottom: 20px;
   color: #ffffff;
 }
