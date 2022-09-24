@@ -227,8 +227,10 @@ address {
   gap: 30px;
 }
 
-.activity-img {
+.img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team {
@@ -255,10 +257,6 @@ address {
 
 .team-item:last-child {
   margin-right: 0px;
-}
-
-.team-photo {
-  display: block;
 }
 
 .team-container-name {
