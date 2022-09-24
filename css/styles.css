@@ -46,6 +46,15 @@ address {
   background: #ffffff;
 }
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-index {
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -56,12 +65,6 @@ address {
 .container-header {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.container-header-index {
-  border-bottom: 1px solid #ececec;
 }
 
 .header-navigation {
@@ -84,10 +87,6 @@ address {
 
 .header-portfolio {
   border-bottom: 1px solid #ececec;
-}
-
-.container-header-portfolio {
-  padding-bottom: 25px;
 }
 
 .link-logo,
@@ -138,10 +137,10 @@ address {
 
 .index-hero {
   background: #2f303a;
+  padding: 200px 0;
 }
 
 .container-hero {
-  height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -154,10 +153,9 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
   width: 696px;
   text-align: center;
-  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 .index-btn {
@@ -175,10 +173,12 @@ address {
   letter-spacing: 0.06em;
 }
 
+.index-peculiarities {
+  padding-top: var(--distance-top-bottom-section);
+}
+
 .container-index-peculiarities {
   display: flex;
-  padding-bottom: var(--distance-top-bottom-section);
-  padding-top: var(--distance-top-bottom-section);
 }
 
 .index-hero-list {
@@ -211,6 +211,11 @@ address {
   color: #757575;
 }
 
+.activity {
+  padding-top: var(--distance-top-bottom-section);
+  padding-bottom: var(--distance-top-bottom-section);
+}
+
 .activity-text,
 .team-tagline {
   font-weight: var(--title-logo-font-weight);
@@ -234,12 +239,9 @@ address {
 }
 
 .team {
-  background: #f5f4fa;
-}
-
-.container-activity,
-.container-team {
+  padding-top: var(--distance-top-bottom-section);
   padding-bottom: var(--distance-top-bottom-section);
+  background: #f5f4fa;
 }
 
 .index-list-team {
@@ -266,7 +268,6 @@ address {
 }
 
 .team-tagline {
-  padding-top: var(--distance-top-bottom-section);
   margin-bottom: 50px;
 }
 
@@ -288,7 +289,7 @@ address {
   color: #757575;
 }
 
-.container-portfolio-main {
+.portfolio-hero {
   padding-top: var(--distance-top-bottom-section);
   padding-bottom: var(--distance-top-bottom-section);
 }
@@ -364,12 +365,12 @@ address {
 }
 
 .address {
+  padding-top: 20px;
   min-width: 231px;
 }
 
 .footer-logo {
   width: 145px;
-  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -401,13 +402,12 @@ address {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
 }
 
 .container-footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
